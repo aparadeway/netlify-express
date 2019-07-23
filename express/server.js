@@ -4,7 +4,7 @@ const serverless = require('serverless-http');
 const app = express();
 const bodyParser = require('body-parser');
 //const sqlite = require('sqlite');
-
+const multer = require('multer');
 const router = express.Router();
 router.get('/', (req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/html' });

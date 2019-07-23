@@ -22,17 +22,23 @@
   },
   "homepage": "https://github.com/neverendingqs/netlify-express#readme",
   "dependencies": {
-    "aws-sdk": "^2.497.0",
     "multer": "^1.4.2",
-    "parse": "^2.5.1",
+    "node-pre-gyp": "^0.13.0",
     "sqlite": "^3.0.0"
   },
   "devDependencies": {
+    "aws-sdk": "^2.497.0", 
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "multer": "^1.4.2",
     "netlify-lambda": "^0.4.0",
-    "serverless-http": "^1.6.0",
-    "sqlite": "^3.0.0"
+    "serverless-http": "^1.6.0"
+  },
+  "binary": {
+    "module_name" : "netlify-express",
+    "module_path" : "./lib/binding/{configuration}/{node_abi}-{platform}-{arch}/",
+    "remote_path" : "./{module_name}/v{version}/{configuration}/",
+    "package_name": "{module_name}-v{version}-{node_abi}-{platform}-{arch}.tar.gz",
+    "host"        : "https://node-pre-gyp-tests.s3-us-west-1.amazonaws.com"
   }
 }

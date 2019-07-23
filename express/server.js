@@ -8,12 +8,12 @@ const sqlite = require('sqlite');
 // var dbPromise = sqlite.open('./../db/portral.db', {Promise});
 // var db;
 
-// const router = express.Router();
-// router.get('/', (req, res) => {
-//   res.writeHead(200, { 'Content-Type': 'text/html' });
-//   res.write('<h1>Fuck Express.js!</h1>');
-//   res.end();
-// });
+const router = express.Router();
+router.get('/', (req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/html' });
+  res.write('<h1>Fuck Express.js!</h1>');
+  res.end();
+});
 
 // app.post('/register', async (req, res) => {
 // 	var user = req.body;

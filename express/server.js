@@ -5,8 +5,8 @@ const app = express();
 const bodyParser = require('body-parser');
 const sqlite = require('sqlite');
 
-var dbPromise = sqlite.open('./../db/portral.db', {Promise});
-var db;
+// var dbPromise = sqlite.open('./../db/portral.db', {Promise});
+// var db;
 
 // const router = express.Router();
 // router.get('/', (req, res) => {
@@ -128,11 +128,11 @@ var db;
 // 	}
 // })
 
-;
+// ;
 
-(async function() {
-	db = await dbPromise
-})()
+// (async function() {
+// 	db = await dbPromise
+// })()
 
 app.use(bodyParser.json());
 app.use('/.netlify/functions/server', router);  // path must route to lambda

@@ -28,7 +28,7 @@
   "devDependencies": {
     "aws-sdk": "^2.497.0", 
     "body-parser": "^1.18.3",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "multer": "^1.4.2",
     "netlify-lambda": "^0.4.0",
     "serverless-http": "^1.6.0"
